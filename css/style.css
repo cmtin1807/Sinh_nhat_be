@@ -58,9 +58,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1 !important;
-  color: pink;
+  color: #FFD1DC ;
   text-align: left;
-  background: pink !important;
+  background: #FFD1DC  !important;
 
 }
 
@@ -8994,7 +8994,7 @@ h1, h2, h3, h4, h5,
   display: block; }
 
 .blog-entry {
-  background: pink; }
+  background: #FFD1DC; }
   @media (min-width: 768px) {
     .blog-entry {
       margin-bottom: 0px; } }
@@ -9799,12 +9799,11 @@ textarea.form-control {
 
 .linhsan{
   height: 210px;
-  border: 3px orange solid
+  border: 0px orange solid
 }
 
 .linhsantext{
-  background: pink;
-  border: pink;
+
   margin-top: 5px;
   font-family: "Great Vibes", cursive;
   font-size: 1.4em;
