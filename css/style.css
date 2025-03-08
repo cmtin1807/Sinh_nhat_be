@@ -9806,6 +9806,11 @@ textarea.form-control {
   background: aqua;
   border: aqua;
   margin-top: 5px;
+  font-family: "Great Vibes", cursive;
+  font-size: 1.2em;
+  font-weight: 700; /* hoặc 800, 900 */
+
+
 }
 
 
