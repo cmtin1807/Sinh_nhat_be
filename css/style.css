@@ -50,14 +50,19 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
+  transform: scale(0.95); /* Thu nhỏ 85% */
+  transform-origin: top center; /* Giữ nguyên vị trí */
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
+  line-height: 1 !important;
+  color: pink;
   text-align: left;
-  background-color: #fff; }
+  background: pink !important;
+
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -447,6 +452,7 @@ pre {
   overflow-y: scroll; }
 
 .container {
+  margin-top: 0;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -463,7 +469,7 @@ pre {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 90%; } }
+      max-width: 100%; } }
 
 .container-fluid {
   width: 100%;
@@ -8988,17 +8994,18 @@ h1, h2, h3, h4, h5,
   display: block; }
 
 .blog-entry {
-  background: #fff; }
+  background: pink; }
   @media (min-width: 768px) {
     .blog-entry {
-      margin-bottom: 30px; } }
+      margin-bottom: 0px; } }
   @media (max-width: 767.98px) {
     .blog-entry {
-      margin-bottom: 30px; } }
+      margin-bottom: 00px; } }
   .blog-entry .text {
     position: relative;
     border-top: 0;
-    border-radius: 2px; }
+    border-radius: 20px;
+  }
     .blog-entry .text .heading {
       font-size: 20px;
       margin-bottom: 16px;
@@ -9068,7 +9075,7 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 0em 0;
   position: relative; }
 
 .ftco-no-pt {
@@ -9789,3 +9796,44 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.linhsan{
+  height: 190px;
+  border: 3px orange solid
+}
+
+.linhsantext{
+  background: aqua;
+  border: aqua;
+  margin-top: 5px;
+}
+
+
+.star-container {
+  position: fixed;
+  width: 85vw;
+  height: 60vh;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 8px white;
+  animation: fall linear infinite;
+}
+
+/* Tạo nhiều ngôi sao với vị trí và tốc độ rơi khác nhau */
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(60vh);
+    opacity: 0;
+  }
+}
